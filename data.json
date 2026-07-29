@@ -566,8 +566,8 @@
           {
             "local": "Combo de Mao",
             "visitante": "La 31 F.C.",
-            "gl": null,
-            "gv": null,
+            "gl": 2,
+            "gv": 0,
             "penales": null,
             "fecha": "25 Jul",
             "hora": "4:00PM"
@@ -575,8 +575,8 @@
           {
             "local": "Z-4",
             "visitante": "Rueda la Pola",
-            "gl": null,
-            "gv": null,
+            "gl": 1,
+            "gv": 0,
             "penales": null,
             "fecha": "25 Jul",
             "hora": "5:00PM"
@@ -585,21 +585,21 @@
         "semis": [
           {
             "local": "Unión 32",
-            "visitante": null,
+            "visitante": "Z-4",
             "gl": null,
             "gv": null,
             "penales": null,
-            "fecha": "Por definir",
-            "hora": ""
+            "fecha": "1 Ago",
+            "hora": "3:00PM"
           },
           {
             "local": "Combo B y H",
-            "visitante": null,
+            "visitante": "Combo de Mao",
             "gl": null,
             "gv": null,
             "penales": null,
-            "fecha": "Por definir",
-            "hora": ""
+            "fecha": "1 Ago",
+            "hora": "4:00PM"
           }
         ],
         "tercero": {
@@ -1272,8 +1272,8 @@
           {
             "local": "La Banda del Pelos",
             "visitante": "Fagama",
-            "gl": null,
-            "gv": null,
+            "gl": 1,
+            "gv": 0,
             "penales": null,
             "fecha": "25 Jul",
             "hora": "2:00PM"
@@ -1281,8 +1281,8 @@
           {
             "local": "Combo de Bin",
             "visitante": "Combo de Jonathan",
-            "gl": null,
-            "gv": null,
+            "gl": 2,
+            "gv": 0,
             "penales": null,
             "fecha": "25 Jul",
             "hora": "3:00PM"
@@ -1291,21 +1291,21 @@
         "semis": [
           {
             "local": "Los Chaparro",
-            "visitante": null,
+            "visitante": "Combo de Bin",
             "gl": null,
             "gv": null,
             "penales": null,
-            "fecha": "Por definir",
-            "hora": ""
+            "fecha": "1 Ago",
+            "hora": "5:00PM"
           },
           {
             "local": "San Eusebio F.C.",
-            "visitante": null,
+            "visitante": "La Banda del Pelos",
             "gl": null,
             "gv": null,
             "penales": null,
-            "fecha": "Por definir",
-            "hora": ""
+            "fecha": "1 Ago",
+            "hora": "2:00PM"
           }
         ],
         "tercero": {
