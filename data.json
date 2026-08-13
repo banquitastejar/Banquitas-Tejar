@@ -543,7 +543,7 @@
       ],
       "eliminatoria": {
         "activa": true,
-        "tercerPuesto": true,
+        "tercerPuesto": false,
         "cuartos": [
           {
             "local": "Vieja Guardia",
@@ -586,25 +586,25 @@
           {
             "local": "Unión 32",
             "visitante": "Z-4",
-            "gl": null,
-            "gv": null,
-            "penales": null,
+            "gl": 1,
+            "gv": 1,
+            "penales": "visitante",
             "fecha": "1 Ago",
             "hora": "3:00PM"
           },
           {
             "local": "Combo B y H",
             "visitante": "Combo de Mao",
-            "gl": null,
-            "gv": null,
-            "penales": null,
+            "gl": 0,
+            "gv": 0,
+            "penales": "local",
             "fecha": "1 Ago",
             "hora": "4:00PM"
           }
         ],
         "tercero": {
-          "local": null,
-          "visitante": null,
+          "local": "Unión 32",
+          "visitante": "Combo de Mao",
           "gl": null,
           "gv": null,
           "penales": null,
@@ -612,13 +612,13 @@
           "hora": ""
         },
         "final": {
-          "local": null,
-          "visitante": null,
+          "local": "Z-4",
+          "visitante": "Combo B y H",
           "gl": null,
           "gv": null,
           "penales": null,
-          "fecha": "Por definir",
-          "hora": ""
+          "fecha": "15 Ago",
+          "hora": "4:30 PM"
         }
       }
     },
@@ -1249,7 +1249,7 @@
       ],
       "eliminatoria": {
         "activa": true,
-        "tercerPuesto": true,
+        "tercerPuesto": false,
         "cuartos": [
           {
             "local": "Tejar F.C.",
@@ -1292,25 +1292,25 @@
           {
             "local": "Los Chaparro",
             "visitante": "Combo de Bin",
-            "gl": null,
-            "gv": null,
-            "penales": null,
+            "gl": 0,
+            "gv": 0,
+            "penales": "local",
             "fecha": "1 Ago",
             "hora": "5:00PM"
           },
           {
             "local": "San Eusebio F.C.",
             "visitante": "La Banda del Pelos",
-            "gl": null,
-            "gv": null,
+            "gl": 0,
+            "gv": 1,
             "penales": null,
             "fecha": "1 Ago",
             "hora": "2:00PM"
           }
         ],
         "tercero": {
-          "local": null,
-          "visitante": null,
+          "local": "Combo de Bin",
+          "visitante": "San Eusebio F.C.",
           "gl": null,
           "gv": null,
           "penales": null,
@@ -1318,13 +1318,13 @@
           "hora": ""
         },
         "final": {
-          "local": null,
-          "visitante": null,
+          "local": "Los Chaparro",
+          "visitante": "La Banda del Pelos",
           "gl": null,
           "gv": null,
           "penales": null,
-          "fecha": "Por definir",
-          "hora": ""
+          "fecha": "15 Ago",
+          "hora": "3:30PM"
         }
       }
     }
