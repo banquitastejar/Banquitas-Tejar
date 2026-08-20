@@ -614,8 +614,8 @@
         "final": {
           "local": "Z-4",
           "visitante": "Combo B y H",
-          "gl": null,
-          "gv": null,
+          "gl": 0,
+          "gv": 1,
           "penales": null,
           "fecha": "15 Ago",
           "hora": "4:30 PM"
@@ -1320,9 +1320,9 @@
         "final": {
           "local": "Los Chaparro",
           "visitante": "La Banda del Pelos",
-          "gl": null,
-          "gv": null,
-          "penales": null,
+          "gl": 0,
+          "gv": 1,
+          "penales": "visitante",
           "fecha": "15 Ago",
           "hora": "3:30PM"
         }
@@ -1330,6 +1330,12 @@
     }
   },
   "anuncios": [
+    {
+      "titulo": "📢 COMUNICADO OFICIAL — BANQUITAS DEL TEJAR ⚽🏆",
+      "texto": "Queremos agradecer de corazón a toda la comunidad, equipos, jugadores y familias que hicieron parte del torneo Banquitas del Tejar.\n\n🙌 Gracias por su participación, compromiso y por contribuir para que este torneo pudiera desarrollarse y culminar de la mejor manera.\n\n💰 PREMIACIÓN\n\nLa organización informa que la premiación fue cumplida en su totalidad:\n\n🏆 La Banda del Pelo: $2.000.000 — Campeón\n🥈 Los Chaparros: $1.000.000\n🏆 Z-4: $1.000.000\n⚽ Combo B & H: $1.000.000 en efectivo + inscripción gratuita para el próximo torneo, como compensación para completar el valor correspondiente de la premiación.\n\n✅ De esta manera, queremos dejar claridad y transparencia sobre el cumplimiento de la premiación.\n\n🔥 ¡Esto no termina aquí!",
+      "fecha": "2026-08-20",
+      "activo": true
+    },
     {
       "titulo": "📢 Comunicado Oficial",
       "texto": "Después de conversar con la mayoría de los delegados de los equipos que disputarán el segundo playoff, se evidenció que varios de ellos viajarán durante este fin de semana.\n\nPor esta razón, y con el fin de garantizar la participación de todos los equipos, el segundo playoff será aplazado para el próximo fin de semana.\n\nAgradecemos la comprensión de todos los participantes.\n\nAtentamente,\nLa Organización",
