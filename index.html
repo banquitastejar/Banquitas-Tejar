@@ -175,6 +175,11 @@ tr.retired td.l::after{content:' · RETIRADO';font-size:10px;color:var(--maroon)
 .io{display:flex;flex-wrap:wrap;gap:10px;padding:0 18px 18px}
 .btn-io{background:var(--navy);color:#fff}.btn-clear{background:var(--maroon);color:#fff}
 .hint{font-family:'Saira';font-size:12px;color:var(--muted);padding:0 18px 14px;line-height:1.5}
+.pub-box{margin:0 18px 14px;padding:14px;border:2px solid var(--gold);border-radius:8px;background:#fdf8ec}
+.pub-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn-pub{background:var(--green);color:#fff;flex:1;min-width:220px}
+.btn-key{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+#pub-status{font-family:'Saira';font-size:12.5px;margin-top:8px;min-height:16px;line-height:1.5}
 .cklabel{display:flex;align-items:center;gap:8px;margin-top:10px;font-family:'Saira Condensed';font-weight:600;
   text-transform:uppercase;font-size:12px;color:var(--muted)}
 .cklabel input{width:auto}
@@ -748,12 +753,20 @@ El respeto nunca debe perderse.</div>
       </div>
     </div>
 
+    <div class="pub-box">
+      <div class="pub-row">
+        <button class="btn btn-pub" onclick="publicarEnGitHub()" id="btn-publicar">🚀 Publicar cambios en internet</button>
+        <button class="btn btn-key" onclick="configurarAccesoGitHub()">🔑 Configurar acceso</button>
+      </div>
+      <div id="pub-status"></div>
+    </div>
+
     <div class="io">
       <button class="btn btn-io" onclick="exportJSON()">⬇ Descargar datos (JSON)</button>
       <button class="btn btn-io" onclick="exportHTML()">⬇ Descargar página actualizada</button>
       <label class="btn btn-io" style="cursor:pointer">⬆ Cargar JSON<input type="file" id="imp" accept=".json" style="display:none"></label>
     </div>
-    <div class="hint">Para compartir: usa <b>“Descargar página actualizada”</b> y envía ese archivo a los jugadores. Puedes guardar el JSON en tu Drive como respaldo y volver a cargarlo cuando quieras.</div>
+    <div class="hint">👉 Lo normal es usar el botón dorado <b>“Publicar cambios en internet”</b>: sube tus cambios directo a la página web, sin descargar nada. Los botones de abajo son solo para tener una copia de respaldo en tu computador.</div>
   </section>
 
   <div id="view"></div>
@@ -1302,13 +1315,76 @@ function download(content, name, type){
   const a=document.createElement('a'); a.href=u; a.download=name; a.click(); URL.revokeObjectURL(u);
 }
 function exportJSON(){ download(JSON.stringify(DATA,null,2),'banquitas_datos.json','application/json'); }
-function exportHTML(){
+function buildExportedHTML(){
   document.getElementById('tournament-data').textContent=JSON.stringify(DATA);
   const view=document.getElementById('view'), keep=view.innerHTML; view.innerHTML='';
   const adm=document.getElementById('admin'), wasOpen=adm.className; adm.className='';
   const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
   adm.className=wasOpen; view.innerHTML=keep;
-  download(html,'banquitas_torneo.html','text/html');
+  return html;
+}
+function exportHTML(){ download(buildExportedHTML(),'banquitas_torneo.html','text/html'); }
+
+/* ---------- PUBLICAR DIRECTO A GITHUB ---------- */
+const GH_OWNER='banquitastejar', GH_REPO='Banquitas-Tejar', GH_BRANCH='main', GH_PATH='index.html';
+function getGhToken(){ try{ return localStorage.getItem('gh_pub_token')||''; }catch(e){ return ''; } }
+function setPubStatus(msg, ok){
+  const el=document.getElementById('pub-status'); if(!el) return;
+  el.textContent=msg; el.style.color = ok===true?'var(--green)':(ok===false?'var(--maroon)':'var(--muted)');
+}
+function configurarAccesoGitHub(){
+  const tieneToken=!!getGhToken();
+  const t=prompt(
+    (tieneToken?'Ya tienes un acceso configurado.\n\n':'')+
+    'Pega aquí tu token de acceso de GitHub (Personal Access Token) para poder publicar.\n\n'+
+    'Se guarda únicamente en este navegador, nunca se sube a la página.\n\n'+
+    (tieneToken?'Si no quieres cambiarlo, deja esto vacío y presiona Aceptar.':''),
+    ''
+  );
+  if(t===null) return;
+  if(t.trim()===''){ setPubStatus(tieneToken?'Acceso sin cambios.':'No se configuró ningún acceso todavía.', null); return; }
+  localStorage.setItem('gh_pub_token', t.trim());
+  setPubStatus('Acceso guardado ✓ Ya puedes usar "Publicar cambios en internet".', true);
+}
+function toBase64Utf8(str){
+  const bytes=new TextEncoder().encode(str);
+  let binary=''; const chunk=0x8000;
+  for(let i=0;i<bytes.length;i+=chunk) binary+=String.fromCharCode.apply(null, bytes.subarray(i,i+chunk));
+  return btoa(binary);
+}
+async function publicarEnGitHub(){
+  const token=getGhToken();
+  if(!token){ configurarAccesoGitHub(); return; }
+  const btn=document.getElementById('btn-publicar');
+  const original=btn.textContent;
+  btn.disabled=true; btn.textContent='⏳ Publicando...'; setPubStatus('Publicando cambios, un momento...', null);
+  try{
+    const html=buildExportedHTML();
+    const apiUrl=`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+    const headers={ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' };
+    const getRes=await fetch(`${apiUrl}?ref=${GH_BRANCH}`,{headers});
+    if(!getRes.ok) throw new Error(mensajeErrorGh(getRes.status,'leer'));
+    const actual=await getRes.json();
+    const putRes=await fetch(apiUrl,{
+      method:'PUT', headers:{...headers,'Content-Type':'application/json'},
+      body:JSON.stringify({
+        message:'Actualizar datos del torneo - '+new Date().toLocaleString('es-CO'),
+        content:toBase64Utf8(html), sha:actual.sha, branch:GH_BRANCH
+      })
+    });
+    if(!putRes.ok) throw new Error(mensajeErrorGh(putRes.status,'publicar'));
+    setPubStatus('✅ ¡Publicado! En 1 o 2 minutos verás el cambio en la página web.', true);
+  }catch(e){
+    setPubStatus('❌ '+e.message, false);
+  }finally{
+    btn.disabled=false; btn.textContent=original;
+  }
+}
+function mensajeErrorGh(status,accion){
+  if(status===401) return 'El acceso configurado no es válido. Usa "🔑 Configurar acceso" para poner uno nuevo.';
+  if(status===403) return 'El acceso configurado no tiene permiso para '+accion+' esta página.';
+  if(status===404) return 'No se encontró la página en internet (revisa que el repositorio siga existiendo).';
+  return 'No se pudo '+accion+' la página (código '+status+'). Intenta de nuevo en un momento.';
 }
 document.getElementById('imp').onchange=function(e){
   const file=e.target.files[0]; if(!file) return; const r=new FileReader();
