@@ -1331,6 +1331,12 @@
   },
   "anuncios": [
     {
+      "titulo": "Partido Aplazado",
+      "texto": "ejemplo",
+      "fecha": "2026-09-18",
+      "activo": true
+    },
+    {
       "titulo": "📢 COMUNICADO OFICIAL — BANQUITAS DEL TEJAR ⚽🏆",
       "texto": "Queremos agradecer de corazón a toda la comunidad, equipos, jugadores y familias que hicieron parte del torneo Banquitas del Tejar.\n\n🙌 Gracias por su participación, compromiso y por contribuir para que este torneo pudiera desarrollarse y culminar de la mejor manera.\n\n💰 PREMIACIÓN\n\nLa organización informa que la premiación fue cumplida en su totalidad:\n\n🏆 La Banda del Pelo: $2.000.000 — Campeón\n🥈 Los Chaparros: $1.000.000\n🏆 Z-4: $1.000.000\n⚽ Combo B & H: $1.000.000 en efectivo + inscripción gratuita para el próximo torneo, como compensación para completar el valor correspondiente de la premiación.\n\n✅ De esta manera, queremos dejar claridad y transparencia sobre el cumplimiento de la premiación.\n\n🔥 ¡Esto no termina aquí!",
       "fecha": "2026-08-20",
