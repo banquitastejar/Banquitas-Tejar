@@ -385,22 +385,22 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
   text-transform:uppercase;letter-spacing:.04em;color:var(--green);margin-bottom:4px}
 .prox-empty small{font-family:'Saira';font-size:14px;color:var(--muted)}
 </style>
-<style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+</head>
 <body>
 <header>
   <div class="wrap">
     <svg class="ball" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="#fff" stroke-width="3"></circle><path d="M50 14 L70 30 L62 56 L38 56 L30 30Z" fill="#fff"></path><path d="M50 86 L30 72 M50 86 L70 72 M14 44 L30 56 M86 44 L70 56" stroke="#fff" stroke-width="3" fill="none"></path></svg>
     <div class="kicker">Torneo de Fútbol · Liga</div>
     <h1><span class="r">BANQUITAS</span> <span class="b">DEL TEJAR</span></h1>
-    <div class="subtitle" id="season">Marzo – Junio 2026</div>
+    <div class="subtitle" id="season">Copa Navidad - Segunda Temporada</div>
   </div>
 </header>
 
 <div class="controls">
   <div class="wrap">
-    <div class="seg" id="catseg"><button class="">Mayores</button><button class="active">Única</button></div>
-    <div class="tabs" id="tabs"><button class="" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button><button class="active" data-tab="eliminatoria">🏆 Eliminatoria</button><button class="" data-tab="multas">💰 Multas</button></div>
-    <button class="admin-toggle on" id="admBtn" style="">✎ Editar</button>
+    <div class="seg" id="catseg"><button class="active">Mayores</button><button class="">Única</button></div>
+    <div class="tabs" id="tabs"><button class="" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="active" data-tab="disciplina">Disciplina</button><button class="" data-tab="multas">💰 Multas</button></div>
+    <button class="admin-toggle" id="admBtn" style="">✎ Editar</button>
   </div>
 </div>
 
@@ -415,10 +415,10 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
           <div><label>Hora (opcional)</label><input id="m_hora" placeholder="Ej: 7:00 PM"></div>
         </div>
         <div class="row3">
-          <div><label>Local</label><select id="m_local"><option>Los Chaparro</option><option>La Banda del Pelos</option><option>Combo de Bin</option><option>San Eusebio F.C.</option><option>Fagama</option><option>La Santa Fe</option><option>Combo de Jonathan</option><option>Tejar F.C.</option></select></div>
+          <div><label>Local</label><select id="m_local"><option>Unión 32</option><option>Manzana 22</option><option>HyB F.C.</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Combo de Mao</option><option>Z4</option></select></div>
           <div><label>GL</label><input id="m_gl" type="number" min="0"></div>
           <div><label>GV</label><input id="m_gv" type="number" min="0"></div>
-          <div><label>Visitante</label><select id="m_visit"><option>Los Chaparro</option><option>La Banda del Pelos</option><option>Combo de Bin</option><option>San Eusebio F.C.</option><option>Fagama</option><option>La Santa Fe</option><option>Combo de Jonathan</option><option>Tejar F.C.</option></select></div>
+          <div><label>Visitante</label><select id="m_visit"><option>Unión 32</option><option>Manzana 22</option><option>HyB F.C.</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Combo de Mao</option><option>Z4</option></select></div>
         </div>
         <label>Nota (opcional)</label><input id="m_nota" placeholder="Walkover / Aplazado…">
         <button class="btn btn-go" onclick="addMatch()">Guardar partido</button>
@@ -427,7 +427,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       <div class="form">
         <h4>＋ Agregar tarjeta</h4>
         <label>Fecha</label><input id="t_fecha" type="date" value="2026-06-04">
-        <label>Equipo</label><select id="t_equipo"><option>Los Chaparro</option><option>La Banda del Pelos</option><option>Combo de Bin</option><option>San Eusebio F.C.</option><option>Fagama</option><option>La Santa Fe</option><option>Combo de Jonathan</option><option>Tejar F.C.</option></select>
+        <label>Equipo</label><select id="t_equipo"><option>Unión 32</option><option>Manzana 22</option><option>HyB F.C.</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Combo de Mao</option><option>Z4</option></select>
         <div class="row2">
           <div><label>Jugador</label><input id="t_jug" placeholder="Nombre"></div>
           <div><label>#</label><input id="t_dor" placeholder="Dorsal"></div>
@@ -441,7 +441,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 
     <div class="adm-teams-wrap">
       <h4>⚽ Inscripción de equipos</h4>
-      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Única</strong></div>
+      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Mayores</strong></div>
       <div class="form">
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
           <div style="flex:1;min-width:200px">
@@ -453,7 +453,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
       <div class="teams-list" id="teams-list">
     <div class="team-row">
-      <span class="team-row-name">Los Chaparro</span>
+      <span class="team-row-name">Unión 32</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(0)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(0)">✎ Renombrar</button>
@@ -461,7 +461,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">La Banda del Pelos</span>
+      <span class="team-row-name">Manzana 22</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(1)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(1)">✎ Renombrar</button>
@@ -469,7 +469,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Combo de Bin</span>
+      <span class="team-row-name">HyB F.C.</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(2)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(2)">✎ Renombrar</button>
@@ -477,7 +477,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">San Eusebio F.C.</span>
+      <span class="team-row-name">Combo la 21</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(3)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(3)">✎ Renombrar</button>
@@ -485,7 +485,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Fagama</span>
+      <span class="team-row-name">La 31 F.C.</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(4)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(4)">✎ Renombrar</button>
@@ -493,7 +493,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">La Santa Fe</span>
+      <span class="team-row-name">Combo de Mao</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(5)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(5)">✎ Renombrar</button>
@@ -501,19 +501,11 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Combo de Jonathan</span>
+      <span class="team-row-name">Z4</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(6)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(6)">✎ Renombrar</button>
         <button class="btn-sm btn-sm-del" onclick="removeTeam(6)">✕ Eliminar</button>
-      </div>
-    </div>
-    <div class="team-row">
-      <span class="team-row-name">Tejar F.C.</span>
-      <div class="team-row-actions">
-        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(7)">⚑ Retirar</button>
-        <button class="btn-sm btn-sm-edit" onclick="renameTeam(7)">✎ Renombrar</button>
-        <button class="btn-sm btn-sm-del" onclick="removeTeam(7)">✕ Eliminar</button>
       </div>
     </div></div>
     </div>
@@ -521,12 +513,23 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
     <div class="adm-ann-wrap form">
       <h4>📢 Anuncios del torneo</h4>
       <label>Título</label><input id="an_tit" placeholder="Ej: Partido aplazado">
-      <label>Mensaje</label><textarea id="an_txt" placeholder="Escribe el contenido del anuncio…" data-lt-tmp-id="lt-217545" spellcheck="false" data-gramm="false"></textarea>
+      <label>Mensaje</label><textarea id="an_txt" placeholder="Escribe el contenido del anuncio…" spellcheck="false"></textarea>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <button class="btn btn-go" onclick="addAnnouncement()">＋ Publicar anuncio</button>
         <button class="btn btn-io" onclick="previewAnn()" style="margin-top:12px">👁 Ver como jugador</button>
       </div>
       <div class="ann-adm-list" id="ann-adm-list">
+    <div class="ann-adm-item">
+      <div class="aai-text">
+        <div class="aai-tit">Partido Aplazado</div>
+        <div class="aai-msg">ejemplo</div>
+      </div>
+      <div class="aai-actions">
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(0)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(0)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(0)">✕</button>
+      </div>
+    </div>
     <div class="ann-adm-item">
       <div class="aai-text">
         <div class="aai-tit">📢 COMUNICADO OFICIAL — BANQUITAS DEL TEJAR ⚽🏆</div>
@@ -548,9 +551,9 @@ La organización informa que la premiación fue cumplida en su totalidad:
 🔥 ¡Esto no termina aquí!</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(0)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(0)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(0)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(1)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(1)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(1)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -566,9 +569,9 @@ Atentamente,
 La Organización</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(1)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(1)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(1)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(2)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(2)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(2)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -585,9 +588,9 @@ Esta medida busca mantener la equidad deportiva y evitar inconvenientes o reclam
 Agradecemos la comprensión y el cumplimiento de esta norma por parte de todos los equipos.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(2)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(2)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(2)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(3)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(3)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(3)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -619,9 +622,9 @@ Agradecemos la comprensión y el cumplimiento de esta norma por parte de todos l
 🏆 Los ganadores de las semifinales disputarán la Gran Final.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(3)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(3)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(3)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(4)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(4)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(4)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -639,9 +642,9 @@ Los equipos que no se encuentren a paz y salvo con estos conceptos no podrán di
 Agradecemos la colaboración y el compromiso de todos para garantizar el buen desarrollo de esta fase del campeonato.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(4)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(4)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(4)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(5)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(5)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(5)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -658,9 +661,9 @@ El valor del arbitraje para cada partido será de **$80.000**.
 Esta medida busca garantizar un mejor control de los encuentros y contribuir al buen desarrollo de esta etapa decisiva del campeonato. Agradecemos la comprensión y el compromiso de todos los equipos.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(5)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(5)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(5)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(6)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(6)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(6)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -674,9 +677,9 @@ Los equipos pueden pagar la inscripción vía Nequi al número 3158624374 y debe
 Agradecemos su compromiso y puntualidad.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(6)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(6)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(6)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(7)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(7)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(7)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -694,9 +697,9 @@ Cumplamos entre todos para mantener el
 orden del torneo.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(7)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(7)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(7)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(8)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(8)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(8)">✕</button>
       </div>
     </div>
     <div class="ann-adm-item">
@@ -712,19 +715,21 @@ Una decisión puede generar debate.
 El respeto nunca debe perderse.</div>
       </div>
       <div class="aai-actions">
-        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(8)">Activo</span>
-        <button class="btn-sm btn-sm-edit" onclick="editAnn(8)">✎</button>
-        <button class="btn-sm btn-sm-del" onclick="deleteAnn(8)">✕</button>
+        <span class="badge-on" style="cursor:pointer" onclick="toggleAnn(9)">Activo</span>
+        <button class="btn-sm btn-sm-edit" onclick="editAnn(9)">✎</button>
+        <button class="btn-sm btn-sm-del" onclick="deleteAnn(9)">✕</button>
       </div>
     </div></div>
     </div>
 
     <div class="adm-teams-wrap" id="adm-elim-section">
-      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Única</span></h4>
+      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Mayores</span></h4>
       <div id="elim-adm-body">
-      <p style="font-family:'Saira Condensed';font-size:14px;color:var(--green);margin-bottom:10px">✓ Eliminatoria activa en <strong>Única</strong></p>
-      <button class="btn" style="background:var(--navy);color:#fff" onclick="TAB='eliminatoria';buildControls();render();document.getElementById('view').scrollIntoView({behavior:'smooth'})">Ver bracket →</button>
-      <button class="btn" style="background:#f1dadf;color:var(--maroon);margin-left:8px" onclick="desactivarEliminatoria()">✕ Desactivar</button></div>
+      <p style="font-family:'Saira';font-size:13px;color:var(--muted);margin-bottom:10px">
+        Se tomarán los top 7 equipos de <strong>Mayores</strong> y se generarán los cruces automáticamente:
+      </p>
+      <div style="background:#fff;border:2px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:12px"><span style="color:var(--muted);font-size:12px">Sin equipos</span></div>
+      <button class="btn btn-go" onclick="activarEliminatoria()">⚡ Activar fase eliminatoria</button></div>
     </div>
 
     <div class="adm-nueva-liga">
@@ -748,7 +753,71 @@ El respeto nunca debe perderse.</div>
           </div>
         </div>
         <h4 style="font-family:'Saira Condensed';font-weight:800;text-transform:uppercase;color:var(--navy);font-size:15px;letter-spacing:.05em;margin-bottom:10px">Categorías y equipos inscritos</h4>
-        <div id="nl-cats-container"></div>
+        <div id="nl-cats-container">
+    <div class="new-liga-cat">
+      <div class="new-liga-cat-h">Mayores
+        <button class="btn-sm btn-sm-del" onclick="nlRemoveCat(0)">✕ Eliminar categoría</button>
+      </div>
+      <div class="nl-teams-list">
+        
+            <span class="team-chip">Unión 32
+              <button class="del-chip" onclick="nlRemoveTeam(0,0)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Manzana 22
+              <button class="del-chip" onclick="nlRemoveTeam(0,1)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">HyB F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(0,2)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Combo la 21
+              <button class="del-chip" onclick="nlRemoveTeam(0,3)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">La 31 F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(0,4)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Combo de Mao
+              <button class="del-chip" onclick="nlRemoveTeam(0,5)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Z4
+              <button class="del-chip" onclick="nlRemoveTeam(0,6)" title="Quitar">✕</button>
+            </span>
+      </div>
+      <div class="nl-team-add">
+        <input id="nl-eq-0" placeholder="Nombre del equipo" onkeydown="if(event.key==='Enter')nlAddTeam(0)">
+        <button class="btn btn-go" onclick="nlAddTeam(0)">＋ Agregar</button>
+      </div>
+    </div>
+    <div class="new-liga-cat">
+      <div class="new-liga-cat-h">Única
+        <button class="btn-sm btn-sm-del" onclick="nlRemoveCat(1)">✕ Eliminar categoría</button>
+      </div>
+      <div class="nl-teams-list">
+        
+            <span class="team-chip">San Eusebio F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(1,0)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Combo de Jhonatan
+              <button class="del-chip" onclick="nlRemoveTeam(1,1)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Los profetas
+              <button class="del-chip" onclick="nlRemoveTeam(1,2)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Satuple
+              <button class="del-chip" onclick="nlRemoveTeam(1,3)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">El Tejar F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(1,4)" title="Quitar">✕</button>
+            </span>
+      </div>
+      <div class="nl-team-add">
+        <input id="nl-eq-1" placeholder="Nombre del equipo" onkeydown="if(event.key==='Enter')nlAddTeam(1)">
+        <button class="btn btn-go" onclick="nlAddTeam(1)">＋ Agregar</button>
+      </div>
+    </div>
+  <div class="nl-cats-add">
+    <input id="nl-new-cat-input" placeholder="Nombre de nueva categoría" onkeydown="if(event.key==='Enter')nlAddCat()">
+    <button class="btn btn-io" onclick="nlAddCat()">＋ Nueva categoría</button>
+  </div></div>
         <button class="btn btn-go" style="width:100%;margin-top:16px;font-size:15px;padding:12px" onclick="crearNuevaLiga()">🏆 Crear nueva liga</button>
       </div>
     </div>
@@ -777,6 +846,11 @@ El respeto nunca debe perderse.</div>
   <div class="ann-modal">
     <div class="ann-head"><span class="ann-ico">📢</span><h2>Anuncios</h2></div>
     <div class="ann-body" id="ann-body">
+    <div class="ann-item">
+      <div class="a-tit">Partido Aplazado</div>
+      <div class="a-txt">ejemplo</div>
+      <div class="a-fecha">📅 2026-09-18</div>
+    </div>
     <div class="ann-item">
       <div class="a-tit">📢 COMUNICADO OFICIAL — BANQUITAS DEL TEJAR ⚽🏆</div>
       <div class="a-txt">Queremos agradecer de corazón a toda la comunidad, equipos, jugadores y familias que hicieron parte del torneo Banquitas del Tejar.
@@ -922,31 +996,18 @@ El respeto nunca debe perderse.</div>
 <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
   <div class="modal" onclick="event.stopPropagation()">
     <div class="modal-h">
-      <h3 id="modal-title">Gran Final</h3>
+      <h3 id="modal-title">Acceso administrador</h3>
       <button class="btn-modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body form" id="modal-body">
-    <div style="font-family:'Saira Condensed';font-weight:700;font-size:16px;color:var(--navy);margin-bottom:12px;text-align:center">Los Chaparro <span style="color:var(--muted)">vs</span> La Banda del Pelos</div>
-    <div class="row2">
-      <div><label>Fecha</label><input id="em_efecha" type="date" value="2026-08-15"></div>
-      <div><label>Hora (opcional)</label><input id="em_ehora" placeholder="Ej: 7:00 PM" value="3:30PM"></div>
+      <label>Contraseña</label>
+      <input id="adm_pwd" type="password" placeholder="Contraseña" autocomplete="off" onkeydown="if(event.key==='Enter')checkAdminPwd()">
+      <button class="btn btn-go" style="margin-top:14px;width:100%" onclick="checkAdminPwd()">Entrar</button>
     </div>
-    <div style="border-top:2px dashed var(--line);margin:12px 0 10px;padding-top:10px">
-      <div style="font-family:'Saira Condensed';font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:8px">Resultado (dejar vacío si aún no se juega)</div>
-      <div class="row2">
-        <div><label>Los Chaparro</label><input id="em_gl" type="number" min="0" value="0"></div>
-        <div><label>La Banda del Pelos</label><input id="em_gv" type="number" min="0" value="1"></div>
-      </div>
-      <label style="margin-top:10px">Desempate por penales (si aplica)</label>
-      <select id="em_pen"><option value="" selected="">— Sin desempate por penales</option><option value="local">Los Chaparro ganó en penales</option><option value="visitante">La Banda del Pelos ganó en penales</option></select>
-    </div>
-    <button class="btn btn-go" style="margin-top:12px;width:100%" onclick="saveElimMatch('final',0)">Guardar</button>
-    <button class="btn" style="margin-top:8px;width:100%;background:#f1dadf;color:var(--maroon);border:0;border-radius:5px;padding:10px;cursor:pointer;font-family:'Saira Condensed';font-weight:800;font-size:13px;text-transform:uppercase" onclick="clearElimMatch('final',0)">Borrar resultado</button>
-  </div>
   </div>
 </div>
 
-<script id="tournament-data" type="application/json">{"meta":{"nombre":"Banquitas del Tejar","temporada":"Marzo – Junio 2026","corte":"2026-04-17","multas":{"amarilla":5000,"azul":7000,"roja":10000}},"categorias":{"Mayores":{"equipos":["Unión 32","Combo B y H","Z-4","Vieja Guardia","La 31 F.C.","Rueda la Pola","Districarnes","Combo de Mao","Terra Mítica"],"retirados":["Terra Mítica"],"pjFijo":{"Terra Mítica":9},"partidos":[{"fecha":"28 Mar","local":"Vieja Guardia","gl":2,"gv":0,"visitante":"Rueda la Pola","nota":""},{"fecha":"11 Abr","local":"Unión 32","gl":1,"gv":0,"visitante":"Rueda la Pola","nota":""},{"fecha":"11 Abr","local":"Z-4","gl":0,"gv":0,"visitante":"Vieja Guardia","nota":""},{"fecha":"11 Abr","local":"La 31 F.C.","gl":0,"gv":1,"visitante":"Combo B y H","nota":""},{"fecha":"17 Abr","local":"Combo de Mao","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover"},{"fecha":"17 Abr","local":"Z-4","gl":0,"gv":0,"visitante":"La 31 F.C.","nota":""},{"fecha":"18 Abr","local":"Combo B y H","gl":2,"gv":0,"visitante":"Rueda la Pola","nota":""},{"fecha":"24 Abr","local":"Unión 32","gl":2,"gv":0,"visitante":"La 31 F.C.","nota":""},{"fecha":"25 Abr","local":"Combo de Mao","gl":2,"gv":0,"visitante":"Vieja Guardia","nota":""},{"fecha":"25 Abr","local":"Combo B y H","gl":3,"gv":0,"visitante":"Terra Mítica","nota":""},{"fecha":"25 Abr","local":"Z-4","gl":0,"gv":0,"visitante":"Unión 32","nota":""},{"fecha":"1 May","local":"Combo de Mao","gl":0,"gv":1,"visitante":"Z-4","nota":""},{"fecha":"2 May","local":"Combo B y H","gl":3,"gv":0,"visitante":"Vieja Guardia","nota":"Walkover"},{"fecha":"2 May","local":"Rueda la Pola","gl":1,"gv":0,"visitante":"La 31 F.C.","nota":""},{"fecha":"2 May","local":"Unión 32","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover"},{"fecha":"8 May","local":"La 31 F.C.","gl":4,"gv":0,"visitante":"Districarnes","nota":""},{"fecha":"4 Jul","local":"Combo de Mao","visitante":"Combo B y H","gl":1,"gv":1,"nota":"","hora":"4:00PM"},{"fecha":"9 May","local":"Unión 32","gl":1,"gv":0,"visitante":"Vieja Guardia","nota":""},{"fecha":"9 May","local":"Z-4","gl":1,"gv":1,"visitante":"Rueda la Pola","nota":""},{"fecha":"23 May","local":"Unión 32","gl":2,"gv":0,"visitante":"Combo de Mao","nota":"Ajustado"},{"fecha":"23 May","local":"La 31 F.C.","gl":0,"gv":1,"visitante":"Vieja Guardia","nota":""},{"fecha":"23 May","local":"Z-4","gl":0,"gv":1,"visitante":"Combo B y H","nota":""},{"fecha":"29 May","local":"Rueda la Pola","gl":0,"gv":4,"visitante":"Districarnes","nota":"Goleada técnica"},{"fecha":"Retiro","local":"Z-4","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover retiro"},{"fecha":"Retiro","local":"Vieja Guardia","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover retiro"},{"fecha":"Retiro","local":"La 31 F.C.","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover retiro"},{"fecha":"Retiro","local":"Rueda la Pola","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover retiro"},{"fecha":"Retiro","local":"Districarnes","gl":3,"gv":0,"visitante":"Terra Mítica","nota":"Walkover retiro"},{"fecha":"6 Jun","local":"Rueda la Pola","visitante":"Combo de Mao","gl":0,"gv":3,"nota":""},{"fecha":"6 Jun","local":"Districarnes","visitante":"Z-4","gl":0,"gv":2,"nota":""},{"fecha":"6 Jun","local":"Combo B y H","visitante":"Unión 32","gl":0,"gv":2,"nota":""},{"fecha":"12 Jun","local":"Combo de Mao","visitante":"Districarnes","gl":1,"gv":0,"nota":"Walkover retiro voluntario por situación externa","hora":"7:00 PM"},{"fecha":"13 Jun","local":"Combo de Mao","visitante":"La 31 F.C.","gl":2,"gv":0,"nota":"","hora":"5:00 PM"},{"fecha":"13 Jun","local":"Vieja Guardia","visitante":"Districarnes","gl":3,"gv":0,"nota":"Walkover retiro","hora":"8:00 PM"},{"fecha":"4 Jul","local":"Unión 32","visitante":"Districarnes","gl":3,"gv":0,"nota":"","hora":"6:00PM"},{"fecha":"4 Jul","local":"Combo B y H","visitante":"Districarnes","gl":3,"gv":0,"nota":"Aplazo"}],"tarjetas":[{"fecha":"2026-04-11","equipo":"La 31 F.C.","jugador":"Diego Yesid Caicedo","dorsal":"7","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-05-23","equipo":"La 31 F.C.","jugador":"Andres Perez","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"Rueda la Pola","jugador":"Ricardo Arana","dorsal":"18","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-29","equipo":"Rueda la Pola","jugador":"Diego Trujillo","dorsal":"9","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-25","equipo":"Unión 32","jugador":"Mai Pedraza","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"Unión 32","jugador":"Gustavo Gonzales","dorsal":"18","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-23","equipo":"Unión 32","jugador":"Freddy Marroquin","dorsal":"6","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-23","equipo":"Combo B y H","jugador":"Gilberto Jurado","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-29","equipo":"Districarnes","jugador":"Javier Perez","dorsal":"16","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-25","equipo":"Vieja Guardia","jugador":"Horacio","dorsal":"13","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-25","equipo":"Vieja Guardia","jugador":"Fabian","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-25","equipo":"Vieja Guardia","jugador":"Cristian","dorsal":"5","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-23","equipo":"Vieja Guardia","jugador":"Juan Lopez","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-23","equipo":"Vieja Guardia","jugador":"Juan Lopez","dorsal":"7","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Rueda la Pola","jugador":"Javier Perez","dorsal":"16","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Rueda la Pola","jugador":"Maicol Gomez","dorsal":"6","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Rueda la Pola","jugador":"Fabian Contreras","dorsal":"9","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Combo de Mao","jugador":"Adolfo Mogollon","dorsal":"10","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Districarnes","jugador":"German Garzon","dorsal":"10","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Z-4","jugador":"Daniel Bernal","dorsal":"10","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Combo B y H","jugador":"Beto Mora","dorsal":"21","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"Combo B y H","jugador":"Héctor Rodríguez","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Mao","jugador":"Wilton Lugo","dorsal":"6","tipo":"Azul","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Mao","jugador":"Wilton Lugo","dorsal":"","tipo":"Roja","exp":false,"nota":""}],"eliminatoria":{"activa":true,"tercerPuesto":false,"cuartos":[{"local":"Vieja Guardia","visitante":"Rueda la Pola","gl":0,"gv":1,"penales":null,"fecha":"12 Jul","hora":"2:00PM"},{"local":"La 31 F.C.","visitante":"Districarnes","gl":1,"gv":0,"penales":null,"fecha":"12 Jul","hora":"5PM"},{"local":"Combo de Mao","visitante":"La 31 F.C.","gl":2,"gv":0,"penales":null,"fecha":"25 Jul","hora":"4:00PM"},{"local":"Z-4","visitante":"Rueda la Pola","gl":1,"gv":0,"penales":null,"fecha":"25 Jul","hora":"5:00PM"}],"semis":[{"local":"Unión 32","visitante":"Z-4","gl":1,"gv":1,"penales":"visitante","fecha":"1 Ago","hora":"3:00PM"},{"local":"Combo B y H","visitante":"Combo de Mao","gl":0,"gv":0,"penales":"local","fecha":"1 Ago","hora":"4:00PM"}],"tercero":{"local":"Unión 32","visitante":"Combo de Mao","gl":null,"gv":null,"penales":null,"fecha":"Por definir","hora":""},"final":{"local":"Z-4","visitante":"Combo B y H","gl":0,"gv":1,"penales":null,"fecha":"15 Ago","hora":"4:30 PM"}}},"Única":{"equipos":["Los Chaparro","La Banda del Pelos","Combo de Bin","San Eusebio F.C.","Fagama","La Santa Fe","Combo de Jonathan","Tejar F.C."],"retirados":[],"pjFijo":{},"partidos":[{"fecha":"11 Abr","local":"Los Chaparro","gl":2,"gv":0,"visitante":"Combo de Bin","nota":""},{"fecha":"11 Abr","local":"La Banda del Pelos","gl":2,"gv":2,"visitante":"Combo de Jonathan","nota":""},{"fecha":"18 Abr","local":"Los Chaparro","gl":3,"gv":0,"visitante":"Combo de Jonathan","nota":""},{"fecha":"18 Abr","local":"Combo de Bin","gl":0,"gv":1,"visitante":"La Banda del Pelos","nota":""},{"fecha":"24 Abr","local":"Fagama","gl":1,"gv":1,"visitante":"La Santa Fe","nota":""},{"fecha":"25 Abr","local":"Combo de Bin","gl":2,"gv":0,"visitante":"Combo de Jonathan","nota":""},{"fecha":"25 Abr","local":"Los Chaparro","gl":1,"gv":1,"visitante":"La Banda del Pelos","nota":""},{"fecha":"1 May","local":"Los Chaparro","gl":2,"gv":0,"visitante":"La Santa Fe","nota":""},{"fecha":"2 May","local":"Fagama","gl":0,"gv":4,"visitante":"Combo de Bin","nota":"Goleada técnica"},{"fecha":"8 May","local":"Fagama","gl":1,"gv":1,"visitante":"Tejar F.C.","nota":""},{"fecha":"9 May","local":"San Eusebio F.C.","gl":3,"gv":1,"visitante":"Combo de Jonathan","nota":""},{"fecha":"9 May","local":"La Banda del Pelos","gl":1,"gv":0,"visitante":"La Santa Fe","nota":""},{"fecha":"22 May","local":"Los Chaparro","gl":0,"gv":0,"visitante":"San Eusebio F.C.","nota":""},{"fecha":"22 May","local":"La Banda del Pelos","gl":2,"gv":0,"visitante":"Fagama","nota":""},{"fecha":"5 Jun","local":"La Santa Fe","visitante":"Combo de Jonathan","gl":3,"gv":0,"nota":"Aplazado"},{"fecha":"23 May","local":"Combo de Bin","gl":1,"gv":0,"visitante":"Tejar F.C.","nota":""},{"fecha":"29 May","local":"Fagama","gl":0,"gv":2,"visitante":"Los Chaparro","nota":""},{"fecha":"29 May","local":"Tejar F.C.","gl":0,"gv":2,"visitante":"San Eusebio F.C.","nota":""},{"fecha":"5 Jun","local":"San Eusebio F.C.","visitante":"Fagama","gl":1,"gv":0,"nota":""},{"fecha":"5 Jun","local":"Los Chaparro","visitante":"Tejar F.C.","gl":3,"gv":0,"nota":""},{"fecha":"6 Jun","local":"San Eusebio F.C.","visitante":"La Banda del Pelos","gl":0,"gv":1,"nota":""},{"fecha":"6 Jun","local":"La Santa Fe","visitante":"Tejar F.C.","gl":1,"gv":2,"nota":""},{"fecha":"12 Jun","local":"Fagama","visitante":"Combo de Jonathan","gl":0,"gv":1,"nota":"","hora":"8:00 PM"},{"fecha":"13 Jun","local":"Combo de Bin","visitante":"San Eusebio F.C.","gl":0,"gv":2,"nota":"","hora":"6:00 PM"},{"fecha":"13 Jun","local":"La Banda del Pelos","visitante":"Tejar F.C.","gl":2,"gv":2,"nota":"","hora":"7:00 PM"},{"fecha":"4 Jul","local":"Combo de Bin","visitante":"La Santa Fe","gl":0,"gv":0,"nota":"","hora":"2:00PM"},{"fecha":"4 Jul","local":"Combo de Jonathan","visitante":"Tejar F.C.","gl":0,"gv":0,"nota":"","hora":"3:00PM"},{"fecha":"4 Jul","local":"La Santa Fe","visitante":"San Eusebio F.C.","gl":0,"gv":3,"nota":"","hora":"5:00PM"}],"tarjetas":[{"fecha":"2026-04-18","equipo":"Combo de Bin","jugador":"Carlos Sanchez","dorsal":"23","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-18","equipo":"Combo de Bin","jugador":"Edwin Quiroga","dorsal":"8","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-04-25","equipo":"Combo de Bin","jugador":"Edwin Quiroga","dorsal":"8","tipo":"Amarilla","exp":false,"nota":"'+2': por confirmar"},{"fecha":"2026-04-18","equipo":"Combo de Jonathan","jugador":"Jonathan Ortiz","dorsal":"1","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"Combo de Jonathan","jugador":"Jefferson","dorsal":"77","tipo":"Amarilla","exp":false,"nota":"'Amarillas': por confirmar"},{"fecha":"2026-05-09","equipo":"La Santa Fe","jugador":"Camilo Espinosa","dorsal":"19","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"La Santa Fe","jugador":"Camilo Espinosa","dorsal":"19","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"La Santa Fe","jugador":"Jefferson Morales","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-09","equipo":"La Santa Fe","jugador":"Brayan Gomez","dorsal":"23","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-22","equipo":"Fagama","jugador":"Edgardo","dorsal":"17","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-22","equipo":"Fagama","jugador":"Edgardo","dorsal":"17","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-22","equipo":"Fagama","jugador":"Edgardo","dorsal":"17","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-05-29","equipo":"Fagama","jugador":"Leonardo Pandilla","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-29","equipo":"Tejar F.C.","jugador":"Fabian Contreras","dorsal":"1","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-05-29","equipo":"Tejar F.C.","jugador":"Diego P.","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-05","equipo":"La Santa Fe","jugador":"Diego Pardo","dorsal":"2","tipo":"Azul","exp":false,"nota":""},{"fecha":"2026-06-05","equipo":"Combo de Jonathan","jugador":"Jefferson Ortiz","dorsal":"11","tipo":"Azul","exp":false,"nota":""},{"fecha":"2026-06-05","equipo":"Combo de Jonathan","jugador":"Cristian Mendez","dorsal":"10","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"San Eusebio F.C.","jugador":"Sebastián Moton","dorsal":"14","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"San Eusebio F.C.","jugador":"David C.","dorsal":"11","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"San Eusebio F.C.","jugador":"Hugo Jiménez","dorsal":"89","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"La Banda del Pelos","jugador":"Jorge Rodríguez","dorsal":"6","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"La Banda del Pelos","jugador":"Cristian Tobo","dorsal":"8","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"La Banda del Pelos","jugador":"Carlos Ruiz","dorsal":"7","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"La Santa Fe","jugador":"Brian López","dorsal":"23","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-06","equipo":"La Santa Fe","jugador":"Camilo","dorsal":"22","tipo":"Roja","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Fagama","jugador":"Rodrigo Gamboa","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Fagama","jugador":"Julian Gamboa","dorsal":"17","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Cristian Mendez","dorsal":"10","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Santiago Farfan","dorsal":"23","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Santiago Farfan","dorsal":"23","tipo":"Azul","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Tejar F.C.","jugador":"Gustavo Angel","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Bin","jugador":"Jhonathan Gaitan","dorsal":"6","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"San Eusebio F.C.","jugador":"David Martinez","dorsal":"11","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Fagama","jugador":"Rodrigo Gamboa","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Fagama","jugador":"Julian Gamboa","dorsal":"17","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Cristian Mendez","dorsal":"10","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Santiago Farfan","dorsal":"23","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Jonathan","jugador":"Santiago Farfan","dorsal":"23","tipo":"Azul","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"Combo de Bin","jugador":"Jonathan Gaitan","dorsal":"","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-12","equipo":"San Eusebio F.C.","jugador":"David Martienez","dorsal":"11","tipo":"Amarilla","exp":false,"nota":""},{"fecha":"2026-06-13","equipo":"Tejar F.C.","jugador":"Gustavo Angel","dorsal":"15","tipo":"Amarilla","exp":false,"nota":""}],"eliminatoria":{"activa":true,"tercerPuesto":false,"cuartos":[{"local":"Tejar F.C.","visitante":"Combo de Jonathan","gl":0,"gv":0,"penales":"visitante","fecha":"12 Jul","hora":"3:00PM"},{"local":"La Santa Fe","visitante":"Fagama","gl":0,"gv":1,"penales":null,"fecha":"12 Jul","hora":"4:00PM"},{"local":"La Banda del Pelos","visitante":"Fagama","gl":1,"gv":0,"penales":null,"fecha":"25 Jul","hora":"2:00PM"},{"local":"Combo de Bin","visitante":"Combo de Jonathan","gl":2,"gv":0,"penales":null,"fecha":"25 Jul","hora":"3:00PM"}],"semis":[{"local":"Los Chaparro","visitante":"Combo de Bin","gl":0,"gv":0,"penales":"local","fecha":"1 Ago","hora":"5:00PM"},{"local":"San Eusebio F.C.","visitante":"La Banda del Pelos","gl":0,"gv":1,"penales":null,"fecha":"1 Ago","hora":"2:00PM"}],"tercero":{"local":"Combo de Bin","visitante":"San Eusebio F.C.","gl":null,"gv":null,"penales":null,"fecha":"Por definir","hora":""},"final":{"local":"Los Chaparro","visitante":"La Banda del Pelos","gl":0,"gv":1,"penales":"visitante","fecha":"15 Ago","hora":"3:30PM"}}}},"anuncios":[{"titulo":"Partido Aplazado","texto":"ejemplo","fecha":"2026-09-18","activo":true},{"titulo":"📢 COMUNICADO OFICIAL — BANQUITAS DEL TEJAR ⚽🏆","texto":"Queremos agradecer de corazón a toda la comunidad, equipos, jugadores y familias que hicieron parte del torneo Banquitas del Tejar.\n\n🙌 Gracias por su participación, compromiso y por contribuir para que este torneo pudiera desarrollarse y culminar de la mejor manera.\n\n💰 PREMIACIÓN\n\nLa organización informa que la premiación fue cumplida en su totalidad:\n\n🏆 La Banda del Pelo: $2.000.000 — Campeón\n🥈 Los Chaparros: $1.000.000\n🏆 Z-4: $1.000.000\n⚽ Combo B & H: $1.000.000 en efectivo + inscripción gratuita para el próximo torneo, como compensación para completar el valor correspondiente de la premiación.\n\n✅ De esta manera, queremos dejar claridad y transparencia sobre el cumplimiento de la premiación.\n\n🔥 ¡Esto no termina aquí!","fecha":"2026-08-20","activo":true},{"titulo":"📢 Comunicado Oficial","texto":"Después de conversar con la mayoría de los delegados de los equipos que disputarán el segundo playoff, se evidenció que varios de ellos viajarán durante este fin de semana.\n\nPor esta razón, y con el fin de garantizar la participación de todos los equipos, el segundo playoff será aplazado para el próximo fin de semana.\n\nAgradecemos la comprensión de todos los participantes.\n\nAtentamente,\nLa Organización","fecha":"2026-07-15","activo":true},{"titulo":"📢 Comunicado Importante – Jugadores habilitados para las fases finales","texto":"Con el fin de garantizar la transparencia y evitar inconvenientes durante las fases finales del campeonato, se informa a todos los equipos que:\n\n✅ Únicamente podrán disputar los partidos de playoff, eliminatorias, semifinales y final aquellos jugadores que hayan participado al menos una vez durante la fase de todos contra todos (primera ronda).\n\n❌ Los jugadores que no hayan ingresado a la cancha en ningún partido de la primera ronda NO estarán habilitados para participar en las fases finales del torneo.\n\nEsta medida busca mantener la equidad deportiva y evitar inconvenientes o reclamaciones durante el desarrollo de las finales.\n\nAgradecemos la comprensión y el cumplimiento de esta norma por parte de todos los equipos.","fecha":"2026-07-09","activo":true},{"titulo":"📢 Así se jugarán las eliminatorias","texto":"Para premiar el desempeño durante la fase de todos contra todos, la organización de las finales será la siguiente:\n\n🏆 Clasificados directamente a semifinales\n🥇 1.º lugar\n🥈 2.º lugar\n\n🎟️ Playoff\n⚽ 5.º 🆚 7.º\n⚽ 6.º 🆚 8.º\n\n➡️ Los ganadores del playoff enfrentarán a los equipos que terminaron en:\n🥉 3.º lugar\n🏅 4.º lugar\n\n📌 Así queda el camino:\n\n1.º y 2.º ➜ Semifinal\n\n5.º vs 7.º ➜ Ganador ┐\n├➜ vs 3.º ➜ Semifinal\n6.º vs 8.º ➜ Ganador ┘\n├➜ vs 4.º ➜ Semifinal\n\n🏆 Los ganadores de las semifinales disputarán la Gran Final.","fecha":"2026-07-08","activo":true},{"titulo":"📢 Comunicado – Partidos de Playoff","texto":"Se informa a todos los equipos que disputarán los playoff que, para poder jugar su respectivo encuentro, es obligatorio estar al día con todas las obligaciones del campeonato.\n\nAntes del partido, cada equipo deberá tener cancelado:\n✅ El valor de la inscripción (si tiene saldos pendientes).\n✅ Los W.O. pendientes.\n✅ Las tarjetas acumuladas que se encuentren pendientes de pago.\n\nLos equipos que no se encuentren a paz y salvo con estos conceptos no podrán disputar su partido de playoff hasta regularizar su situación.\n\nAgradecemos la colaboración y el compromiso de todos para garantizar el buen desarrollo de esta fase del campeonato.","fecha":"2026-07-08","activo":true},{"titulo":"📢 Comunicado – Terna arbitral","texto":"Teniendo en cuenta las situaciones que se han presentado en algunos partidos y atendiendo la solicitud de varios equipos, a partir de la fase eliminatoria se implementará la **terna arbitral**, con el objetivo de brindar mayor transparencia, imparcialidad y un mejor desarrollo de cada encuentro.\n\nLa terna estará conformada por:\n⚽ 2 árbitros centrales\n📝 1 planillero\n\nEl valor del arbitraje para cada partido será de **$80.000**.\n\nEsta medida busca garantizar un mejor control de los encuentros y contribuir al buen desarrollo de esta etapa decisiva del campeonato. Agradecemos la comprensión y el compromiso de todos los equipos.","fecha":"2026-07-08","activo":true},{"titulo":"Pago de Inscripción","texto":"Importante:\nEl pago de la inscripción es fundamental para garantizar el desarrollo de la próxima fecha. Si los equipos no realizan el pago correspondiente, la jornada no podrá llevarse a cabo.\n\nLos equipos pueden pagar la inscripción vía Nequi al número 3158624374 y deben enviar el comprobante de pago.\n\nAgradecemos su compromiso y puntualidad.","fecha":"2026-06-12","activo":true},{"titulo":"Información general","texto":"Para el correcto desarrollo de la jornada, \nel valor correspondiente al arbitraje \ny las tarjetas debe cancelarse antes de iniciar \nel partido.\n\nSin este pago previo, el encuentro no \npodrá comenzar.\n\nCumplamos entre todos para mantener el \norden del torneo.","fecha":"2026-06-12","activo":true},{"titulo":"Regla de oro del torneo","texto":"1)Respeta las decisiones arbitrales\n2)Expresa tu inconformidad con respeto\n3)Evita agresiones verbales o actitudes ofensivas\nRecuerda: el juego limpio empieza por \nel comportamiento.\n\nUna decisión puede generar debate.\nEl respeto nunca debe perderse.","fecha":"2026-06-12","activo":true}]}</script>
+<script id="tournament-data" type="application/json">{"meta":{"nombre":"Banquitas del Tejar","temporada":"Copa Navidad - Segunda Temporada","corte":"2026-09-23","multas":{"amarilla":6000,"azul":8000,"roja":10000}},"categorias":{"Mayores":{"equipos":["Unión 32","Manzana 22","HyB F.C.","Combo la 21","La 31 F.C.","Combo de Mao","Z4"],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]},"Única":{"equipos":["San Eusebio F.C.","Combo de Jhonatan","Los profetas","Satuple","El Tejar F.C."],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]}},"anuncios":[]}</script>
 <script>
 // ===== LÓGICA DE CÁLCULO (misma que la hoja de cálculo) =====
 function computeStandings(DATA, cat){
@@ -2267,7 +2328,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content ng-version="17.3.7"></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2305,8 +2366,8 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content>
-<div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><!-- Code injected by live-server -->
+
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2344,7 +2405,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><lt-toolbar contenteditable="false" data-lt-adjust-appearance="true" data-lt-force-appearance="light" style="display: none;"><lt-div class="lt-toolbar__wrapper lt-toolbar__wrapper--hide" style="left: 1268px; position: absolute !important; top: 1508px !important; bottom: auto !important; z-index: auto; opacity: 1 !important; pointer-events: all !important;"><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon--trial-ended"><lt-span class="lt-icon__tooltip lt-icon__tooltip--top-right">Tu prueba Premium ha finalizado</lt-span></lt-div><lt-div class="lt-toolbar__premium-icon-dot"></lt-div></lt-div></lt-toolbar><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2382,7 +2443,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><lt-toolbar contenteditable="false" data-lt-adjust-appearance="true" data-lt-force-appearance="light" style="display: none;"><lt-div class="lt-toolbar__wrapper lt-toolbar__wrapper--hide" style="left: 1268px; position: absolute !important; top: 1508px !important; bottom: auto !important; z-index: auto; opacity: 1 !important; pointer-events: all !important;"><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon--trial-ended"><lt-span class="lt-icon__tooltip lt-icon__tooltip--top-right">Tu prueba Premium ha finalizado</lt-span></lt-div><lt-div class="lt-toolbar__premium-icon-dot"></lt-div></lt-div></lt-toolbar><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2420,7 +2481,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><lt-toolbar contenteditable="false" data-lt-adjust-appearance="true" data-lt-force-appearance="light" style="display: none;"><lt-div class="lt-toolbar__wrapper lt-toolbar__wrapper--hide" style="left: 1268px; position: absolute !important; top: 1508px !important; bottom: auto !important; z-index: auto; opacity: 1 !important; pointer-events: all !important;"><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon--trial-ended"><lt-span class="lt-icon__tooltip lt-icon__tooltip--top-right">Tu prueba Premium ha finalizado</lt-span></lt-div><lt-div class="lt-toolbar__premium-icon-dot"></lt-div></lt-div></lt-toolbar><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2458,7 +2519,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><lt-toolbar contenteditable="false" data-lt-adjust-appearance="true" data-lt-force-appearance="light" style="display: none;"><lt-div class="lt-toolbar__wrapper lt-toolbar__wrapper--hide" style="left: 1268px; position: absolute !important; top: 1516px !important; bottom: auto !important; z-index: auto; opacity: 1 !important; pointer-events: all !important;"><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon--trial-ended"><lt-span class="lt-icon__tooltip lt-icon__tooltip--top-right">Tu prueba Premium ha finalizado</lt-span></lt-div><lt-div class="lt-toolbar__premium-icon-dot"></lt-div></lt-div></lt-toolbar><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2496,7 +2557,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2534,7 +2595,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2572,7 +2633,7 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"></div><!-- Code injected by live-server -->
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
@@ -2610,4 +2671,4 @@ buildControls(); render(); showAnn();
 	}
 	// ]]>
 </script>
-<div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div><app-ls-content></app-ls-content><app-ls-content></app-ls-content></body></html>
+</body></html>
