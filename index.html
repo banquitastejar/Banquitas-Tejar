@@ -398,9 +398,9 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 
 <div class="controls">
   <div class="wrap">
-    <div class="seg" id="catseg"><button class="active">Mayores</button><button class="">Única</button><button class="">Infantil</button></div>
-    <div class="tabs" id="tabs"><button class="active" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button></div>
-    <button class="admin-toggle" id="admBtn" style="">✎ Editar</button>
+    <div class="seg" id="catseg"><button class="">Mayores</button><button class="active">Única</button><button class="">Infantil</button></div>
+    <div class="tabs" id="tabs"><button class="active" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button><button class="" data-tab="multas">💰 Multas</button></div>
+    <button class="admin-toggle on" id="admBtn" style="">✎ Editar</button>
   </div>
 </div>
 
@@ -415,10 +415,10 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
           <div><label>Hora (opcional)</label><input id="m_hora" placeholder="Ej: 7:00 PM"></div>
         </div>
         <div class="row3">
-          <div><label>Local</label><select id="m_local"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option></select></div>
+          <div><label>Local</label><select id="m_local"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select></div>
           <div><label>GL</label><input id="m_gl" type="number" min="0"></div>
           <div><label>GV</label><input id="m_gv" type="number" min="0"></div>
-          <div><label>Visitante</label><select id="m_visit"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option></select></div>
+          <div><label>Visitante</label><select id="m_visit"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select></div>
         </div>
         <label>Nota (opcional)</label><input id="m_nota" placeholder="Walkover / Aplazado…">
         <button class="btn btn-go" onclick="addMatch()">Guardar partido</button>
@@ -427,7 +427,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       <div class="form">
         <h4>＋ Agregar tarjeta</h4>
         <label>Fecha</label><input id="t_fecha" type="date" value="2026-06-04">
-        <label>Equipo</label><select id="t_equipo"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option></select>
+        <label>Equipo</label><select id="t_equipo"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select>
         <div class="row2">
           <div><label>Jugador</label><input id="t_jug" placeholder="Nombre"></div>
           <div><label>#</label><input id="t_dor" placeholder="Dorsal"></div>
@@ -441,7 +441,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 
     <div class="adm-teams-wrap">
       <h4>⚽ Inscripción de equipos</h4>
-      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Mayores</strong></div>
+      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Única</strong></div>
       <div class="form">
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
           <div style="flex:1;min-width:200px">
@@ -453,7 +453,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
       <div class="teams-list" id="teams-list">
     <div class="team-row">
-      <span class="team-row-name">Combo de Mao</span>
+      <span class="team-row-name">Satuple</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(0)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(0)">✎ Renombrar</button>
@@ -461,7 +461,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Combo la 21</span>
+      <span class="team-row-name">Los profetas</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(1)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(1)">✎ Renombrar</button>
@@ -469,7 +469,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">La 31 F.C.</span>
+      <span class="team-row-name">San Eusebio F.C.</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(2)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(2)">✎ Renombrar</button>
@@ -477,7 +477,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Unión 32</span>
+      <span class="team-row-name">Tejar F.C.</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(3)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(3)">✎ Renombrar</button>
@@ -485,27 +485,11 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Z4</span>
+      <span class="team-row-name">Combo de Jhonatan</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(4)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(4)">✎ Renombrar</button>
         <button class="btn-sm btn-sm-del" onclick="removeTeam(4)">✕ Eliminar</button>
-      </div>
-    </div>
-    <div class="team-row">
-      <span class="team-row-name">Manzana 22</span>
-      <div class="team-row-actions">
-        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(5)">⚑ Retirar</button>
-        <button class="btn-sm btn-sm-edit" onclick="renameTeam(5)">✎ Renombrar</button>
-        <button class="btn-sm btn-sm-del" onclick="removeTeam(5)">✕ Eliminar</button>
-      </div>
-    </div>
-    <div class="team-row">
-      <span class="team-row-name">HyB F.C.</span>
-      <div class="team-row-actions">
-        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(6)">⚑ Retirar</button>
-        <button class="btn-sm btn-sm-edit" onclick="renameTeam(6)">✎ Renombrar</button>
-        <button class="btn-sm btn-sm-del" onclick="removeTeam(6)">✕ Eliminar</button>
       </div>
     </div></div>
     </div>
@@ -582,10 +566,10 @@ Banquitas del Tejar</div>
     </div>
 
     <div class="adm-teams-wrap" id="adm-elim-section">
-      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Mayores</span></h4>
+      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Única</span></h4>
       <div id="elim-adm-body">
       <p style="font-family:'Saira';font-size:13px;color:var(--muted);margin-bottom:10px">
-        Se tomarán los top 7 equipos de <strong>Mayores</strong> y se generarán los cruces automáticamente:
+        Se tomarán los top 5 equipos de <strong>Única</strong> y se generarán los cruces automáticamente:
       </p>
       <div style="background:#fff;border:2px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:12px"><span style="color:var(--muted);font-size:12px">Sin equipos</span></div>
       <button class="btn btn-go" onclick="activarEliminatoria()">⚡ Activar fase eliminatoria</button></div>
@@ -728,7 +712,7 @@ Banquitas del Tejar</div>
     <div class="ann-body" id="ann-body">
     <div class="ann-item">
       <div class="a-tit">📢 Comunicado – Pago del arbitraje ⚽</div>
-      <div class="a-txt">Equipos, les recordamos que el arbitraje debe quedar cancelado 10 minutos antes de cada partido, en la sede de la organización. Tener el pago listo a tiempo evita retrasos, permite que el partido arranque a la hora programada y nos ayuda a que la jornada fluya para todos. Los invitamos a que el delegado llegue con anticipación y con el dinero a la mano. ¡Gracias por su compromiso y puntualidad! 🙌
+      <div class="a-txt">Equipos, les recordamos que el arbitraje debe quedar cancelado en su totalidad 10 minutos antes de cada partido, en la sede de la organización. Tener el pago listo a tiempo evita retrasos, permite que el partido arranque a la hora programada y nos ayuda a que la jornada fluya para todos. Los invitamos a que el delegado llegue con anticipación y con el dinero a la mano. ¡Gracias por su compromiso y puntualidad! 🙌
 
 Comité Organizador · Banquitas del Tejar</div>
       <div class="a-fecha">📅 2026-09-24</div>
@@ -777,20 +761,18 @@ Banquitas del Tejar</div>
 <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
   <div class="modal" onclick="event.stopPropagation()">
     <div class="modal-h">
-      <h3 id="modal-title">Editar anuncio</h3>
+      <h3 id="modal-title">Acceso administrador</h3>
       <button class="btn-modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body form" id="modal-body">
-    <label>Título</label><input id="ea_tit" value="📢 Comunicado – Pago del arbitraje ⚽">
-    <label>Mensaje</label><textarea id="ea_txt" style="width:100%;padding:8px 10px;border:2px solid var(--line);border-radius:5px;font-family:'Saira';font-size:14px;background:#fff;resize:vertical;min-height:90px">Equipos, les recordamos que el arbitraje debe quedar cancelado 10 minutos antes de cada partido, en la sede de la organización. Tener el pago listo a tiempo evita retrasos, permite que el partido arranque a la hora programada y nos ayuda a que la jornada fluya para todos. Los invitamos a que el delegado llegue con anticipación y con el dinero a la mano. ¡Gracias por su compromiso y puntualidad! 🙌
-
-Comité Organizador · Banquitas del Tejar</textarea>
-    <button class="btn btn-go" style="margin-top:14px;width:100%" onclick="saveAnnEdit(0)">Guardar cambios</button>
-  </div>
+      <label>Contraseña</label>
+      <input id="adm_pwd" type="password" placeholder="Contraseña" autocomplete="off" onkeydown="if(event.key==='Enter')checkAdminPwd()">
+      <button class="btn btn-go" style="margin-top:14px;width:100%" onclick="checkAdminPwd()">Entrar</button>
+    </div>
   </div>
 </div>
 
-<script id="tournament-data" type="application/json">{"meta":{"nombre":"Banquitas del Tejar","temporada":"Temporada 2 - Copa Navidad","corte":"2026-09-24","multas":{"amarilla":6000,"azul":8000,"roja":10000}},"categorias":{"Mayores":{"equipos":["Combo de Mao","Combo la 21","La 31 F.C.","Unión 32","Z4","Manzana 22","HyB F.C."],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]},"Única":{"equipos":["Satuple","Los profetas","San Eusebio F.C.","Tejar F.C.","Combo de Jhonatan"],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]},"Infantil":{"equipos":["Los Junior de Jhonatan","Los Galácticos","Manzana 25"],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]}},"anuncios":[{"titulo":"📢 Comunicado – Pago del arbitraje ⚽","texto":"Equipos, les recordamos que el arbitraje debe quedar cancelado en su totalidad 10 minutos antes de cada partido, en la sede de la organización. Tener el pago listo a tiempo evita retrasos, permite que el partido arranque a la hora programada y nos ayuda a que la jornada fluya para todos. Los invitamos a que el delegado llegue con anticipación y con el dinero a la mano. ¡Gracias por su compromiso y puntualidad! 🙌\n\nComité Organizador · Banquitas del Tejar","fecha":"2026-09-24","activo":true},{"titulo":"📢 Comunicado – Paz y salvo para la tercera fecha","texto":"Según el Artículo 2º del reglamento, para la tercera fecha todos los equipos deben estar a paz y salvo con la organización, con los carnets laminados y todos los jugadores debidamente uniformados. Los equipos que no cumplan pierden por W.O., así que los invitamos a ponerse al día a tiempo para no perder puntos. 🙌","fecha":"2026-09-24","activo":true},{"titulo":"Ya están publicadas las reglas de Banquitas del Tejar ⚽","texto":"Hola, delegados y jugadores de Banquitas del Tejar:\n\nYa tenemos el reglamento oficial del torneo publicado en la página, claro y fácil de consultar desde el celular. Así todos jugamos con las mismas reglas y sin sorpresas el día del partido.\n\nLo que tienes que saber:\n\n⏱️ Los partidos duran 40 minutos: dos tiempos de 20 y cinco de descanso. El árbitro espera 10 minutos después de la hora programada.\n\n👥 Se necesitan mínimo 4 jugadores para iniciar el partido.\n\n✅ Para la tercera fecha el equipo debe estar a paz y salvo, con carnets laminados y todos uniformados. Si no, pierde por W.O.\n\n🟨🟦🟥 Las tarjetas se pagan: amarilla $6.000, azul $8.000 y roja $10.000. Tenemos juego limpio, así que revisa también la tabla de sanciones.\n\n📝 Si necesitas apelar, tienes 24 horas para presentar la carta.\n\n🌟 Novedad en la categoría +40: cada equipo puede inscribir hasta dos jugadores menores de 36 años.\n\nNuestro objetivo es que el torneo sea limpio y que se pase bien en la cancha. Por eso te pedimos que revises el reglamento completo y lo compartas con tu equipo.\n\n👉 https://banquitastejar.github.io/Reglas-de-Banquitas-del-Tejar/\n\nNos vemos en la cancha.\n\nComité Organizador\nBanquitas del Tejar","fecha":"2026-09-24","activo":true}]}</script>
+<script id="tournament-data" type="application/json">{"meta":{"nombre":"Banquitas del Tejar","temporada":"Temporada 2 - Copa Navidad","corte":"2026-09-24","multas":{"amarilla":6000,"azul":8000,"roja":10000}},"categorias":{"Mayores":{"equipos":["Combo de Mao","Combo la 21","La 31 F.C.","Unión 32","Z4","Manzana 22","HyB F.C."],"retirados":[],"pjFijo":{},"partidos":[{"fecha":"26 Sep","local":"HyB F.C.","visitante":"Manzana 22","gl":null,"gv":null,"nota":"","hora":"4PM"},{"fecha":"26 Sep","local":"Unión 32","visitante":"Combo la 21","gl":null,"gv":null,"nota":"","hora":"5 PM"}],"tarjetas":[]},"Única":{"equipos":["Satuple","Los profetas","San Eusebio F.C.","Tejar F.C.","Combo de Jhonatan"],"retirados":[],"pjFijo":{},"partidos":[{"fecha":"26 Sep","local":"Los profetas","visitante":"San Eusebio F.C.","gl":null,"gv":null,"nota":"","hora":"2PM"},{"fecha":"26 Sep","local":"Combo de Jhonatan","visitante":"Satuple","gl":null,"gv":null,"nota":"","hora":"3PM"}],"tarjetas":[]},"Infantil":{"equipos":["Los Junior de Jhonatan","Los Galácticos","Manzana 25"],"retirados":[],"pjFijo":{},"partidos":[],"tarjetas":[]}},"anuncios":[{"titulo":"📢 Comunicado – Pago del arbitraje ⚽","texto":"Equipos, les recordamos que el arbitraje debe quedar cancelado en su totalidad 10 minutos antes de cada partido, en la sede de la organización. Tener el pago listo a tiempo evita retrasos, permite que el partido arranque a la hora programada y nos ayuda a que la jornada fluya para todos. Los invitamos a que el delegado llegue con anticipación y con el dinero a la mano. ¡Gracias por su compromiso y puntualidad! 🙌\n\nComité Organizador · Banquitas del Tejar","fecha":"2026-09-24","activo":true},{"titulo":"📢 Comunicado – Paz y salvo para la tercera fecha","texto":"Según el Artículo 2º del reglamento, para la tercera fecha todos los equipos deben estar a paz y salvo con la organización, con los carnets laminados y todos los jugadores debidamente uniformados. Los equipos que no cumplan pierden por W.O., así que los invitamos a ponerse al día a tiempo para no perder puntos. 🙌","fecha":"2026-09-24","activo":true},{"titulo":"Ya están publicadas las reglas de Banquitas del Tejar ⚽","texto":"Hola, delegados y jugadores de Banquitas del Tejar:\n\nYa tenemos el reglamento oficial del torneo publicado en la página, claro y fácil de consultar desde el celular. Así todos jugamos con las mismas reglas y sin sorpresas el día del partido.\n\nLo que tienes que saber:\n\n⏱️ Los partidos duran 40 minutos: dos tiempos de 20 y cinco de descanso. El árbitro espera 10 minutos después de la hora programada.\n\n👥 Se necesitan mínimo 4 jugadores para iniciar el partido.\n\n✅ Para la tercera fecha el equipo debe estar a paz y salvo, con carnets laminados y todos uniformados. Si no, pierde por W.O.\n\n🟨🟦🟥 Las tarjetas se pagan: amarilla $6.000, azul $8.000 y roja $10.000. Tenemos juego limpio, así que revisa también la tabla de sanciones.\n\n📝 Si necesitas apelar, tienes 24 horas para presentar la carta.\n\n🌟 Novedad en la categoría +40: cada equipo puede inscribir hasta dos jugadores menores de 36 años.\n\nNuestro objetivo es que el torneo sea limpio y que se pase bien en la cancha. Por eso te pedimos que revises el reglamento completo y lo compartas con tu equipo.\n\n👉 https://banquitastejar.github.io/Reglas-de-Banquitas-del-Tejar/\n\nNos vemos en la cancha.\n\nComité Organizador\nBanquitas del Tejar","fecha":"2026-09-24","activo":true}]}</script>
 <script>
 // ===== LÓGICA DE CÁLCULO (misma que la hoja de cálculo) =====
 function computeStandings(DATA, cat){
