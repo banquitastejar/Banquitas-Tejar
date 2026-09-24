@@ -399,7 +399,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 <div class="controls">
   <div class="wrap">
     <div class="seg" id="catseg"><button class="active">Mayores</button><button class="">Única</button><button class="">Infantil</button></div>
-    <div class="tabs" id="tabs"><button class="" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="active" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button><button class="" data-tab="multas">💰 Multas</button></div>
+    <div class="tabs" id="tabs"><button class="" data-tab="proximos">Próximos ★</button><button class="active" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button><button class="" data-tab="multas">💰 Multas</button></div>
     <button class="admin-toggle on" id="admBtn" style="">✎ Editar</button>
   </div>
 </div>
@@ -734,7 +734,92 @@ El respeto nunca debe perderse.</div>
           </div>
         </div>
         <h4 style="font-family:'Saira Condensed';font-weight:800;text-transform:uppercase;color:var(--navy);font-size:15px;letter-spacing:.05em;margin-bottom:10px">Categorías y equipos inscritos</h4>
-        <div id="nl-cats-container"></div>
+        <div id="nl-cats-container">
+    <div class="new-liga-cat">
+      <div class="new-liga-cat-h">Mayores
+        <button class="btn-sm btn-sm-del" onclick="nlRemoveCat(0)">✕ Eliminar categoría</button>
+      </div>
+      <div class="nl-teams-list">
+        
+            <span class="team-chip">Combo de Mao
+              <button class="del-chip" onclick="nlRemoveTeam(0,0)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Combo la 21
+              <button class="del-chip" onclick="nlRemoveTeam(0,1)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">La 31 F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(0,2)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Unión 32
+              <button class="del-chip" onclick="nlRemoveTeam(0,3)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Z4
+              <button class="del-chip" onclick="nlRemoveTeam(0,4)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Manzana 22
+              <button class="del-chip" onclick="nlRemoveTeam(0,5)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">HyB F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(0,6)" title="Quitar">✕</button>
+            </span>
+      </div>
+      <div class="nl-team-add">
+        <input id="nl-eq-0" placeholder="Nombre del equipo" onkeydown="if(event.key==='Enter')nlAddTeam(0)">
+        <button class="btn btn-go" onclick="nlAddTeam(0)">＋ Agregar</button>
+      </div>
+    </div>
+    <div class="new-liga-cat">
+      <div class="new-liga-cat-h">Única
+        <button class="btn-sm btn-sm-del" onclick="nlRemoveCat(1)">✕ Eliminar categoría</button>
+      </div>
+      <div class="nl-teams-list">
+        
+            <span class="team-chip">Satuple
+              <button class="del-chip" onclick="nlRemoveTeam(1,0)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Los profetas
+              <button class="del-chip" onclick="nlRemoveTeam(1,1)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">San Eusebio F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(1,2)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Tejar F.C.
+              <button class="del-chip" onclick="nlRemoveTeam(1,3)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Combo de Jhonatan
+              <button class="del-chip" onclick="nlRemoveTeam(1,4)" title="Quitar">✕</button>
+            </span>
+      </div>
+      <div class="nl-team-add">
+        <input id="nl-eq-1" placeholder="Nombre del equipo" onkeydown="if(event.key==='Enter')nlAddTeam(1)">
+        <button class="btn btn-go" onclick="nlAddTeam(1)">＋ Agregar</button>
+      </div>
+    </div>
+    <div class="new-liga-cat">
+      <div class="new-liga-cat-h">Infantil
+        <button class="btn-sm btn-sm-del" onclick="nlRemoveCat(2)">✕ Eliminar categoría</button>
+      </div>
+      <div class="nl-teams-list">
+        
+            <span class="team-chip">Los Junior de Jhonatan
+              <button class="del-chip" onclick="nlRemoveTeam(2,0)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Los Galácticos
+              <button class="del-chip" onclick="nlRemoveTeam(2,1)" title="Quitar">✕</button>
+            </span>
+            <span class="team-chip">Manzana 25
+              <button class="del-chip" onclick="nlRemoveTeam(2,2)" title="Quitar">✕</button>
+            </span>
+      </div>
+      <div class="nl-team-add">
+        <input id="nl-eq-2" placeholder="Nombre del equipo" onkeydown="if(event.key==='Enter')nlAddTeam(2)">
+        <button class="btn btn-go" onclick="nlAddTeam(2)">＋ Agregar</button>
+      </div>
+    </div>
+  <div class="nl-cats-add">
+    <input id="nl-new-cat-input" placeholder="Nombre de nueva categoría" onkeydown="if(event.key==='Enter')nlAddCat()">
+    <button class="btn btn-io" onclick="nlAddCat()">＋ Nueva categoría</button>
+  </div></div>
         <button class="btn btn-go" style="width:100%;margin-top:16px;font-size:15px;padding:12px" onclick="crearNuevaLiga()">🏆 Crear nueva liga</button>
       </div>
     </div>
