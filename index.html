@@ -398,7 +398,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 
 <div class="controls">
   <div class="wrap">
-    <div class="seg" id="catseg"><button class="">Mayores</button><button class="active">Única</button><button class="">Infantil</button></div>
+    <div class="seg" id="catseg"><button class="active">Mayores</button><button class="">Única</button><button class="">Infantil</button></div>
     <div class="tabs" id="tabs"><button class="active" data-tab="proximos">Próximos ★</button><button class="" data-tab="posiciones">Posiciones</button><button class="" data-tab="partidos">Partidos</button><button class="" data-tab="cronograma">Cronograma</button><button class="" data-tab="faltan">Faltan x jugar</button><button class="" data-tab="disciplina">Disciplina</button><button class="" data-tab="multas">💰 Multas</button></div>
     <button class="admin-toggle" id="admBtn" style="">✎ Editar</button>
   </div>
@@ -415,10 +415,10 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
           <div><label>Hora (opcional)</label><input id="m_hora" placeholder="Ej: 7:00 PM"></div>
         </div>
         <div class="row3">
-          <div><label>Local</label><select id="m_local"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select></div>
+          <div><label>Local</label><select id="m_local"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option><option>ALLIANZA POLLO ESQUINA FC</option><option>SOLO TRONCOS FC</option></select></div>
           <div><label>GL</label><input id="m_gl" type="number" min="0"></div>
           <div><label>GV</label><input id="m_gv" type="number" min="0"></div>
-          <div><label>Visitante</label><select id="m_visit"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select></div>
+          <div><label>Visitante</label><select id="m_visit"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option><option>ALLIANZA POLLO ESQUINA FC</option><option>SOLO TRONCOS FC</option></select></div>
         </div>
         <label>Nota (opcional)</label><input id="m_nota" placeholder="Walkover / Aplazado…">
         <button class="btn btn-go" onclick="addMatch()">Guardar partido</button>
@@ -427,7 +427,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       <div class="form">
         <h4>＋ Agregar tarjeta</h4>
         <label>Fecha</label><input id="t_fecha" type="date" value="2026-06-04">
-        <label>Equipo</label><select id="t_equipo"><option>Satuple</option><option>Los profetas</option><option>San Eusebio F.C.</option><option>Tejar F.C.</option><option>Combo de Jhonatan</option></select>
+        <label>Equipo</label><select id="t_equipo"><option>Combo de Mao</option><option>Combo la 21</option><option>La 31 F.C.</option><option>Unión 32</option><option>Z4</option><option>Manzana 22</option><option>HyB F.C.</option><option>ALLIANZA POLLO ESQUINA FC</option><option>SOLO TRONCOS FC</option></select>
         <div class="row2">
           <div><label>Jugador</label><input id="t_jug" placeholder="Nombre"></div>
           <div><label>#</label><input id="t_dor" placeholder="Dorsal"></div>
@@ -441,7 +441,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
 
     <div class="adm-teams-wrap">
       <h4>⚽ Inscripción de equipos</h4>
-      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Única</strong></div>
+      <div class="cat-sub">Categoría activa: <strong id="teams-cat-name">Mayores</strong></div>
       <div class="form">
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
           <div style="flex:1;min-width:200px">
@@ -453,7 +453,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
       <div class="teams-list" id="teams-list">
     <div class="team-row">
-      <span class="team-row-name">Satuple</span>
+      <span class="team-row-name">Combo de Mao</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(0)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(0)">✎ Renombrar</button>
@@ -461,7 +461,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Los profetas</span>
+      <span class="team-row-name">Combo la 21</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(1)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(1)">✎ Renombrar</button>
@@ -469,7 +469,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">San Eusebio F.C.</span>
+      <span class="team-row-name">La 31 F.C.</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(2)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(2)">✎ Renombrar</button>
@@ -477,7 +477,7 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Tejar F.C.</span>
+      <span class="team-row-name">Unión 32</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(3)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(3)">✎ Renombrar</button>
@@ -485,11 +485,43 @@ footer{text-align:center;font-family:'Saira Condensed';color:var(--muted);font-s
       </div>
     </div>
     <div class="team-row">
-      <span class="team-row-name">Combo de Jhonatan</span>
+      <span class="team-row-name">Z4</span>
       <div class="team-row-actions">
         <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(4)">⚑ Retirar</button>
         <button class="btn-sm btn-sm-edit" onclick="renameTeam(4)">✎ Renombrar</button>
         <button class="btn-sm btn-sm-del" onclick="removeTeam(4)">✕ Eliminar</button>
+      </div>
+    </div>
+    <div class="team-row">
+      <span class="team-row-name">Manzana 22</span>
+      <div class="team-row-actions">
+        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(5)">⚑ Retirar</button>
+        <button class="btn-sm btn-sm-edit" onclick="renameTeam(5)">✎ Renombrar</button>
+        <button class="btn-sm btn-sm-del" onclick="removeTeam(5)">✕ Eliminar</button>
+      </div>
+    </div>
+    <div class="team-row">
+      <span class="team-row-name">HyB F.C.</span>
+      <div class="team-row-actions">
+        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(6)">⚑ Retirar</button>
+        <button class="btn-sm btn-sm-edit" onclick="renameTeam(6)">✎ Renombrar</button>
+        <button class="btn-sm btn-sm-del" onclick="removeTeam(6)">✕ Eliminar</button>
+      </div>
+    </div>
+    <div class="team-row">
+      <span class="team-row-name">ALLIANZA POLLO ESQUINA FC</span>
+      <div class="team-row-actions">
+        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(7)">⚑ Retirar</button>
+        <button class="btn-sm btn-sm-edit" onclick="renameTeam(7)">✎ Renombrar</button>
+        <button class="btn-sm btn-sm-del" onclick="removeTeam(7)">✕ Eliminar</button>
+      </div>
+    </div>
+    <div class="team-row">
+      <span class="team-row-name">SOLO TRONCOS FC</span>
+      <div class="team-row-actions">
+        <button class="btn-sm btn-sm-ret" onclick="toggleRetiredTeam(8)">⚑ Retirar</button>
+        <button class="btn-sm btn-sm-edit" onclick="renameTeam(8)">✎ Renombrar</button>
+        <button class="btn-sm btn-sm-del" onclick="removeTeam(8)">✕ Eliminar</button>
       </div>
     </div></div>
     </div>
@@ -566,12 +598,12 @@ Banquitas del Tejar</div>
     </div>
 
     <div class="adm-teams-wrap" id="adm-elim-section">
-      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Única</span></h4>
+      <h4>🏆 Fase Eliminatoria — <span id="elim-adm-cat">Mayores</span></h4>
       <div id="elim-adm-body">
       <p style="font-family:'Saira';font-size:13px;color:var(--muted);margin-bottom:10px">
-        Se tomarán los top 5 equipos de <strong>Única</strong> y se generarán los cruces automáticamente:
+        Se tomarán los top 8 equipos de <strong>Mayores</strong> y se generarán los cruces automáticamente:
       </p>
-      <div style="background:#fff;border:2px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:12px"><span style="color:var(--muted);font-size:12px">Sin equipos</span></div>
+      <div style="background:#fff;border:2px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:12px"><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Playoff 1: 5° <strong>Combo de Mao</strong> <span style="color:var(--muted)">vs</span> 7° <strong>SOLO TRONCOS FC</strong></div><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Playoff 2: 6° <strong>La 31 F.C.</strong> <span style="color:var(--muted)">vs</span> 8° <strong>Z4</strong></div><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Semifinal previa A: 3° <strong>Combo la 21</strong> <span style="color:var(--muted)">vs ganador Playoff 2</span></div><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Semifinal previa B: 4° <strong>ALLIANZA POLLO ESQUINA FC</strong> <span style="color:var(--muted)">vs ganador Playoff 1</span></div><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Semifinal 1: 1° <strong>HyB F.C.</strong> <span style="color:var(--muted)">vs ganador Semifinal previa B</span></div><div style="font-family:'Saira Condensed';font-size:13px;padding:3px 0;color:var(--ink)">Semifinal 2: 2° <strong>Unión 32</strong> <span style="color:var(--muted)">vs ganador Semifinal previa A</span></div></div>
       <button class="btn btn-go" onclick="activarEliminatoria()">⚡ Activar fase eliminatoria</button></div>
     </div>
 
